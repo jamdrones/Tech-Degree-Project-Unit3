@@ -1,0 +1,44 @@
+* {
+    font-family: 'Merriweather', sans-serif;
+  }
+  
+  header {
+    background-color: rgb(44, 59, 71);
+    padding: 15px;
+    text-align: center;
+  }
+  
+  header h1 {
+    color: white;
+  }
+  
+  .container {
+    padding: 5%;
+  }
+  
+  .section-1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .border {
+    height: auto;
+    width: 100%;
+    border-top: 7px solid black;
+    border-bottom: 3px solid black;
+    padding: 2px;
+  }
+  
+  .top-part label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  
+  .top-part input {
+    width: 97%;
+    padding: 15px;
+    border-radius: 6px;
+    border: none;
+    background: lightgray;
+  }
