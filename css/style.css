@@ -11,6 +11,12 @@
   header h1 {
     color: white;
   }
+
+  legend {
+      padding: 20px;
+      font-weight: bold;
+      font-size: 24px;
+  }
   
   .container {
     padding: 5%;
@@ -35,10 +41,110 @@
     margin-top: 10px;
   }
   
-  .top-part input {
+  .top-part input,
+  .top-part select {
     width: 97%;
     padding: 15px;
     border-radius: 6px;
     border: none;
     background: lightgray;
   }
+
+  .top-part select {
+   max-width: 104%;
+   width: 104%;
+}
+
+::-webkit-input-placeholder { 
+    font-style: italic;
+    padding: 3px;
+}
+
+#zip {
+    width: 40%;
+    margin-right: 50%;
+}
+
+  input {
+    text-align: right;
+    transition-duration: .5s;
+ }
+
+  input:focus {
+    text-align: left;
+    border: solid 2px lightgray;
+    padding: 14px;
+  }
+
+  hr {
+    border: solid black 2px;
+    width: 100%;
+  }
+
+  .bottom-part label {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  .bottom-part label:last-child {
+    margin-left: 0;
+  }
+
+  .text-area {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    }
+
+  textarea {
+    max-width: 100%;
+    border-radius: 6px;
+    border: none;
+    background: lightgray;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  button {
+    width: 100%;
+    background: rgb(19, 172, 164); 
+    border: none;
+    border-radius: 5px;  
+    color: white;
+    padding: 25px;
+  }
+
+  .copy {
+      text-align: center;
+      font-style: italic;
+  }
+
+  fieldset {
+      border: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    .top-part label {
+        display: inline-block;
+     }
+  
+    .container {
+       width: 50%; 
+       margin: auto;
+       padding-top: 50px;
+    }
+
+    .input-selection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    
+
+    #zip {
+        width: 40%;
+        margin-right: 50%;
+    }
+    
+    }

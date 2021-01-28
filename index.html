@@ -29,8 +29,9 @@
     <div class="border"></div>
       
     <div class="section-2">
-       <h2>Contact Information</h2>
-       <form>
+        
+       <fieldset>
+        <legend>Contact Information</legend>
        <div class="top-part">
          <label for="fullName">Full Name</label>
          <input type="text" id="fullName" placeholder="Required" required />
@@ -41,7 +42,7 @@
          <br>
          
          <label>Phone Number</label>
-         <input type="tell" id="phone" />
+         <input type="tel" id="phone" />
          <br>
          
          <label>Street Address</label>
@@ -53,7 +54,8 @@
          <br>
          
          <label for="state">State</label>
-         <select id="state">
+         <select id="state" name="state">
+           <option value="select">Choose State</option>
            <option value="AL">Alabama</option>
            </select>
          <br>
@@ -61,10 +63,14 @@
            <label>Zip Code</label>
          <input type="number" id="zip" />
            <br>
-           </div>
+          </div>
+        </fieldset>
            
          <hr />
-         <h2>Newsletter</h2>
+
+         <fieldset>
+         <div class="bottom-part">
+         <legend>Newsletter</legend>
          <p>Select the newsletter you would like to recieve</p>
          <input type="checkbox" name="vehicle" value="Bike">
          <label>HTML News</label>
@@ -80,21 +86,24 @@
            
          <p>Newsletter format</p>
          <input type="radio" name="vehicle" value="Bike">
-         <label>html</label>
+         <label>HTML</label>
          <br>
            
          <input type="radio" name="vehicle" value="Bike">
          <label>Plain Text</label>
          <br>
          
+         <div class="text-area">
          <label>Other topics you'd like to hear about</label>
          <textarea name="name" rows="8" cols="80"></textarea>
+        </div>
          
           <button type="submit">Sign Up</button>
          <p class="copy">Copyright The Code Review</p>
-      </form>
+        </div>
     </div>
    </div>
+</fieldset>
     
  </body>
  </html>
