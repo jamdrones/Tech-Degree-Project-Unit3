@@ -29,41 +29,58 @@
     <div class="border"></div>
       
     <div class="section-2">
-        
+      <form>
        <fieldset>
         <legend>Contact Information</legend>
-       <div class="top-part">
-         <label for="fullName">Full Name</label>
-         <input type="text" id="fullName" placeholder="Required" required />
+        <div class="top-part">
+          <div class="containers">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="Required" required />
+        </div>
          <br>
-         
-         <label>Email Address</label>
-         <input type="email" id="email" placeholder="Required" required />
-         <br>
-         
-         <label>Phone Number</label>
-         <input type="tel" id="phone" />
-         <br>
-         
-         <label>Street Address</label>
-         <input type="text" id="address" />
-         <br>
-         
-         <label for="city">City</label>
-         <input type="text" id="city" />
-         <br>
-         
-         <label for="state">State</label>
-         <select id="state" name="state">
-           <option value="select">Choose State</option>
-           <option value="AL">Alabama</option>
-           </select>
-         <br>
-           
-           <label>Zip Code</label>
-         <input type="number" id="zip" />
-           <br>
+
+         <div class="containers">
+          <label>Email Address</label>
+          <input type="email" id="email" placeholder="Required" required />
           </div>
+          <br>
+
+         <div class="containers">
+          <label>Phone Number</label>
+          <input type="tel" id="phone" name="user_phone" />
+         </div>
+          <br>
+
+          <div class="containers">
+          <label>Street Address</label>
+          <input type="text" id="address" name="user_address"/>
+          </div>
+          <br>
+          
+
+          <div class="containers">
+          <label for="city">City</label>
+          <input type="text" id="city" name="user_city" />
+          </div>
+          <br>
+          
+
+          <div class="containers">
+          <label for="state">State</label>
+          <select id="state" name="state">
+            <option value="select">Choose State</option>
+            <option value="AL">Alabama</option>
+            </select>
+          </div>
+          <br>
+          
+
+          <div class="containers">
+            <label for="zip">Zip Code</label>
+          <input type="text" id="zip" />
+           </div>
+            <br>
+             </div>
         </fieldset>
            
          <hr />
@@ -71,23 +88,23 @@
          <fieldset>
          <legend>Newsletter</legend>
          <div class="bottom-part">
-         <p>Select the newsletter you would like to recieve</p>
-         <input type="checkbox" name="vehicle" value="Bike">
-         <label>HTML News</label>
-         <br>
+          <p>Select the newsletter you would like to recieve</p>
+          <input type="checkbox" name="vehicle" value="Bike">
+          <label>HTML News</label>
+          <br>
            
-         <input type="checkbox" name="vehicle" value="Bike">
-         <label>CSS News</label>
-         <br>
+          <input type="checkbox" name="vehicle" value="Bike">
+          <label>CSS News</label>
+          <br>
            
-         <input type="checkbox" name="vehicle" value="Bike">
-         <label>Javascript News</label>
-         <br>
+          <input type="checkbox" name="vehicle" value="Bike">
+          <label>Javascript News</label>
+          <br>
            
-         <p>Newsletter format</p>
-         <input type="radio" name="vehicle" value="Bike">
-         <label>HTML</label>
-         <br>
+          <p>Newsletter format</p>
+          <input type="radio" name="vehicle" value="Bike">
+          <label>HTML</label>
+          <br>
            
          <input type="radio" name="vehicle" value="Bike">
          <label>Plain Text</label>
@@ -102,9 +119,10 @@
          <p class="copy">Copyright The Code Review</p>
         </div>
       </fieldset>
+      </form>
     </div>
    </div>
-</fieldset>
+
     
  </body>
  </html>
