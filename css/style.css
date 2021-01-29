@@ -134,17 +134,31 @@
        padding-top: 50px;
     }
 
-    .input-selection {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .containers {
+      display: flex;
+      flex-direction: row;
+      
+    }
+
+    .containers label {		  
+      width: 50%;		        
+  }
+    
+    #zip label {		    
+      flex-basis: 40%;		        
+  }		    
+  
+    #zip div {		    
+        flex-basis: 40%;		        
+    }		    
+
+    #zip {
+      width: 40%;
+      margin-right: 37%;
     }
 
     
 
-    #zip {
-        width: 40%;
-        margin-right: 50%;
-    }
+   
     
     }
